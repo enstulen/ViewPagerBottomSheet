@@ -224,7 +224,7 @@ public class ViewPagerBottomSheetBehavior<V extends View> extends CoordinatorLay
         // First let the parent lay it out
         parent.onLayoutChild(child, layoutDirection);
         // Offset the bottom sheet
-        mParentHeight = parent.getHeight();
+        mParentHeight = parent.getHeight() - 200;
         int peekHeight;
         if (mPeekHeightAuto) {
             if (mPeekHeightMin == 0) {
